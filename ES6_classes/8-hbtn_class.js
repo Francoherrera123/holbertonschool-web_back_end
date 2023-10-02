@@ -17,7 +17,7 @@ export default class HolbertonClass {
       return this._size;
     }
     if (hint === 'string') {
-    return this._location;
+      return this._location;
     }
     return this;
   }
