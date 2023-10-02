@@ -5,15 +5,15 @@ export default class HolbertonCourse {
     this.students = students;
   }
 
-  isString (value) {
+  isString(value) {
     if (typeof value !== 'string') throw new TypeError('Expected a string');
   }
 
-  isNumber (value) {
+  isNumber(value) {
     if (typeof value !== 'number') throw new TypeError('Expected a number');
   }
 
-  isArrayofStrings (array) {
+  isArrayofStrings(array) {
     if (!Array.isArray(array) || array.some((el) => typeof el !== 'string')) {
       throw new TypeError('Expected an array of strings');
     }
